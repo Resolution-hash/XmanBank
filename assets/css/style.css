@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "helvetica";
+    src: url(/assets/fonts/helvetica_regular.otf) format('otf');
+    
+}
+@font-face{
+    font-family: "Sansus Webissimo";
+    src: url(/assets/fonts/sansus-webissimo.otf) format('otf');
+}
+
+body{
+    background: #c42d21;
+}
+
+ul,li{
+    margin:0px;
+    padding:0px;
+    list-style-type: none
+}
+
+.container{
+    width: 1025px;
+    margin:0 auto;
+}
+
+.content{
+    width:1025px;
+    height: 100%;
+
+    padding:0 35px;
+
+    border-top:7px solid #1f1f1f;
+    background:#e9e8eb;
+}
+
+/* header */
+
+.header{
+    display: flex;
+}
+
+.header-logo{
+    display: flex;
+    flex-grow:1;
+    margin:30px 0 30px 0;
+    border: 1px solid;
+}
+
+.logo-title{
+    font-family: "helvetica","Sansus Webissimo", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #3f3f3f;
+    margin-left: 10px;
+    padding-top:10px;
+}
+
+.logo-title span{
+    color:#c42d21 ;
+}
+
+.menu{
+    display:flex;
+    margin: 30px 0 30px 0;
+    border: 1px solid;
+}
+
+.menu-entry{
+    display:flex;
+    align-items: flex-end;
+}
+
+.menu-entry li{
+    font-family: "Sansus Webissimo", helvetica, sans-serif;
+    font-size:15px;
+    color:#595959;
+    margin-right: 20px;
+}
+
+.menu-entry li:last-child{
+    margin-right: 0px;
+}
+
+.menu-entry li a{
+}
+
+
+
+
