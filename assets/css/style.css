@@ -242,21 +242,75 @@ li {
   padding: 10px 20px;
 }
 
-/* =====content===== */
-.section__content {
+/* =====main===== */
+
+.main__content {
   display: flex;
   margin-bottom: 20px;
 }
 
-.content__slider {
+.slider__shell{
+  display: flex;
   margin-right: 15px;
+  min-width: 0;
 }
 
-.content__form {
+.slider{
+  display: flex;
+  min-width: 0;
+  width: 1090px;
+  height: 315px;
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+  height: 309px;
+}
+
+.slick-track{
+  display: flex;
+}
+
+.slider .slick-dots{
+ display: flex;
+ position: absolute;
+ top:90%;
+ left:86%;
+ justify-content:center;
+}
+
+.slider .slick-dots li{
+  display: flex;
+  position: relative;
+  margin-right: 8px;
+  list-style: none;
+}
+
+.slider .slick-dots li button{
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slider .slick-dots li button:hover{
+  background:#eddb63;
+  transform: scale(1.5);
+  transition: all 0.2s ease;
+}
+
+.slick-arrow{
+  font-size: 0;
+}
+
+.main__form {
   font-family: "helvetica", "Sansus Webissimo", sans-serif;
   display: flex;
   flex-direction: column;
   padding: 15px 30px;
+  height: 310px;
   /* ff 3.6+ */
   background: -moz-linear-gradient(
     180deg,
@@ -307,10 +361,16 @@ li {
   display: flex;
   margin-bottom: 20px;
   font-size: 19px;
+  align-items: flex-end;
 }
 
 .form__title h2 {
   margin-left: 5px;
+}
+
+.login-icon{
+  margin-right: 5px;
+  padding-bottom: 3px;
 }
 
 .form__input input {
@@ -329,6 +389,7 @@ li {
 .checkbox__text {
   color: #fff;
   cursor: pointer;
+  font-size: 13px;
 }
 
 .form__text:visited,
@@ -337,13 +398,15 @@ li {
   justify-content: center;
   color: #fff;
   cursor: pointer;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   transition: all 0.5s ease;
 }
 
 .form__text:hover {
   color: #dddddd;
 }
+
+/* =====button===== */
 
 .input__buttons {
   display: flex;
@@ -353,14 +416,13 @@ li {
 }
 
 .input__buttons .btn__login {
-  margin-bottom: 20px;
-}
-
-.input__buttons a {
+  font-size: 16px;
   margin-bottom: 15px;
 }
 
-/* =====button===== */
+.input__buttons a {
+  margin-bottom: 10px;
+}
 
 .btn {
   background: -moz-linear-gradient(
@@ -400,7 +462,7 @@ li {
     rgba(189, 68, 53, 1) 50%
   );
 
-  padding: 10px 15px;
+  padding: 10px 20px;
   color: #fff;
   border-radius: 5%;
 }
@@ -408,6 +470,10 @@ li {
 .btn:hover {
   transform: scale(1.1);
   transition: all 0.5s ease;
+}
+
+.btn__open{
+  font-size: 16px;
 }
 
 /* specialties */
