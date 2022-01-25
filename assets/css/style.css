@@ -208,6 +208,7 @@ li {
   padding: 10px 20px;
   white-space: nowrap;
   cursor: pointer;
+  margin-top: 3px;
 }
 
 .nav__list li a {
@@ -258,7 +259,7 @@ li {
 .slider{
   display: flex;
   min-width: 0;
-  width: 1090px;
+  width: 1335px;
   height: 315px;
   position: relative;
 }
@@ -288,11 +289,20 @@ li {
 }
 
 .slider .slick-dots li button{
-  font-size: 0;
+  /* font-size: 0;
   width: 8px;
   height: 8px;
   background-color: #fff;
+  border-radius: 50%; */
+  font-size: 0;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  /* box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.03); */
+  background: transparent;
   border-radius: 50%;
+  border: 1px solid #fff;
+  transition: all 0.3s;
 }
 
 .slider .slick-dots li button:hover{
@@ -481,17 +491,80 @@ li {
 .specialties__block {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
-.specialties__left h2,
-.specialties__right h2 {
+.specialties__text{
   font-family: "helvetica", "Sansus Webissimo", sans-serif;
   font-size: 22px;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+  margin-left: 10px;
 }
 
-.specialties__left span,
-.specialties__right span {
+.specialties__right .specialties__text{
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.specialties__color{
+  color:#595959;
+}
+
+.specialties__text span{
   color: #e24335;
 }
+
+.specialties__list{
+  display: flex;
+  flex-direction: column;
+  margin-left: 23px;
+  margin-right: 33px;
+}
+
+.list__item{
+  font-family: "helvetica", "Sansus Webissimo", sans-serif;
+  display: flex;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 13px;
+  color:#737070
+}
+
+.chekMark{
+  display: block;
+  width: 13px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+/* =====footer===== */
+
+.footer{
+  font-family: "helvetica", "Sansus Webissimo", sans-serif;
+  color:#fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px 15px 35px;
+  background: #1f1f1f;
+}
+
+.footer__text{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer__copyright{
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text{
+  font-size: 16px;
+}
+
+.copyright__left{
+  margin-right: 10px;
+}
+
+
